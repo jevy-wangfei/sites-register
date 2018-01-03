@@ -1,0 +1,40 @@
+jevy@jevy-VirtualBox:~/sites/sites_register$ python3 tests.py 
+test_alternates_application_rdf_json_view (__main__.RegisterSiteViewsTest) ... /home/jevy/sites/sites_register/controller/classes_functions.py:14: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/jevy/sites/sites_register/controller/views_formats.json' mode='r' encoding='UTF-8'>
+  cvf = json.load(open(join(dirname(__file__), 'views_formats.json')))
+ERROR
+test_alternates_application_rdf_xml_view (__main__.RegisterSiteViewsTest) ... ERROR
+test_alternates_default_view (__main__.RegisterSiteViewsTest) ... ok
+test_alternates_text_html_view (__main__.RegisterSiteViewsTest) ... ok
+test_alternates_text_turtle_view (__main__.RegisterSiteViewsTest) ... ERROR
+test_alternates_unsupported_formats (__main__.RegisterSiteViewsTest) ... ok
+test_reg_application_rdf_json_view (__main__.RegisterSiteViewsTest) ... ERROR
+test_reg_application_rdf_xml_view (__main__.RegisterSiteViewsTest) ... ok
+test_reg_default_view (__main__.RegisterSiteViewsTest) ... ok
+test_reg_text_turtle_view (__main__.RegisterSiteViewsTest) ... ok
+test_reg_unsupported_formats (__main__.RegisterSiteViewsTest) ... ok
+test_alternates_application_json_view (__main__.SingleSiteViewTest) ... /home/jevy/sites/sites_register/_ldapi/__init__.py:204: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/jevy/sites/sites_register/controller/views_formats.json' mode='r' encoding='UTF-8'>
+  cvf = json.load(open(join(dirname(dirname(__file__)), 'controller', 'views_formats.json')))
+ok
+test_alternates_application_rdf_json_view (__main__.SingleSiteViewTest) ... ERROR
+test_alternates_application_rdf_xml_view (__main__.SingleSiteViewTest) ... ERROR
+test_alternates_default_view (__main__.SingleSiteViewTest) ... ok
+test_alternates_text_html_view (__main__.SingleSiteViewTest) ... ok
+test_alternates_text_turtle_view (__main__.SingleSiteViewTest) ... ERROR
+test_alternates_unsupported_formats (__main__.SingleSiteViewTest) ... ok
+test_nemsr_application_vnd_geo_json_view (__main__.SingleSiteViewTest) ... ok
+test_nemsr_unsupported_format (__main__.SingleSiteViewTest) ... ok
+test_nemsr_view (__main__.SingleSiteViewTest) ... ok
+test_pdm_application_rdf_json__view (__main__.SingleSiteViewTest) ... ERROR
+test_pdm_application_rdf_xml_view (__main__.SingleSiteViewTest) ... ok
+test_pdm_default_view (__main__.SingleSiteViewTest) ... ok
+test_pdm_text_html_view (__main__.SingleSiteViewTest) ... ok
+test_pdm_text_turtle_view (__main__.SingleSiteViewTest) ... ok
+test_pdm_unsupported_formats (__main__.SingleSiteViewTest) ... ok
+test_unvalid_site_no_view (__main__.SingleSiteViewTest) ... not valid xml
+ok
+test_valid_site_no_view (__main__.SingleSiteViewTest) ... ok
+
+
+Ran 29 tests in 3.922s
+
+FAILED (errors=8)
